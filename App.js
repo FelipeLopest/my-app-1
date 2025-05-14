@@ -1,20 +1,43 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import CardContato from './components/CardContato';
+import contatos from './data/contatos.json';
+import personagem from './assets/personagem.json';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <ScrollView contentContainerStyle={styles.container}>
+      {/* Personagem individual */}
+      <CardContato
+        id={personagem.id}
+        name={personagem.name}
+        email={personagem.email}
+        phone={personagem.phone}
+        foto={personagem.foto}
+      />  
+
+      {/* Lista de contatos */}
+      {contatos.map((personagem) => (
+        <CardContato
+          key={personagem.id}
+          id={personagem.id}
+          name={personagem.name}
+          email={personagem.email}
+          phone={personagem.phone}
+          foto={personagem.foto}
+        />
+      ))}
+
       <StatusBar style="auto" />
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    paddingTop: 50,
+    paddingBottom: 100,
     alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fff',
   },
 });

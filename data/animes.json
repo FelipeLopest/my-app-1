@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Dragon Ball Z",
+    "genre": "Ação, Fantasia",
+    "episodes": 291,
+    "rating": 8.7,
+    "image": "https://selectgame.gamehall.com.br/wp-content/uploads/2020/03/Dragon-Ball-Z-Kakarot-capa.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Jujutsu Kaisen",
+    "genre": "Ação, Supernatural, Artes Marciais",
+    "episodes": 24,
+    "rating": 8.9,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqsdXixCCVQh57K5bVxIxtRKepxdyOWKLi1Q&s.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "genre": "Ação, Aventura, Fantasia",
+    "episodes": 64,
+    "rating": 9.2,
+    "image": "https://wallpapers.com/images/hd/fullmetal-alchemist-father-with-homunculi-rgi94uypc944czr1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Naruto Shippuden",
+    "genre": "Ação, Aventura, Ninja",
+    "episodes": 500,
+    "rating": 8.7,
+    "image": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/3f283002b47c62b1e5d311c45f95c97e.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Tokyo Revengers",
+    "genre": "Ação, Drama, Delinquentes",
+    "episodes": 24,
+    "rating": 8.4,
+    "image": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/7923a0407dbdba324c56acec9f096c13.jpg"
+  }
+]
