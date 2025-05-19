@@ -1,33 +1,26 @@
+// App.js
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, ScrollView } from 'react-native';
-import CardContato from './components/CardContato';
-import contatos from './data/contatos.json';
-import personagem from './assets/personagem.json';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import CardAnime from './components/CardAnime';
+import animes from './data/animes.json';
+import { Directions } from 'react-native-gesture-handler';
 
 export default function App() {
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      {/* Personagem individual */}
-      <CardContato
-        id={personagem.id}
-        name={personagem.name}
-        email={personagem.email}
-        phone={personagem.phone}
-        foto={personagem.foto}
-      />  
-
-      {/* Lista de contatos */}
-      {contatos.map((personagem) => (
-        <CardContato
-          key={personagem.id}
-          id={personagem.id}
-          name={personagem.name}
-          email={personagem.email}
-          phone={personagem.phone}
-          foto={personagem.foto}
-        />
-      ))}
-
+    <ScrollView style={styles.container}>
+      {
+        animes.map((anime) => (
+          <CardAnime
+            key={anime.id}
+            id={anime.id}
+            title={anime.title}
+            genre={anime.genre}
+            episodes={anime.episodes}
+            rating={anime.rating}
+            image={anime.image}
+          />
+        ))
+      }
       <StatusBar style="auto" />
     </ScrollView>
   );
@@ -35,9 +28,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
-    paddingBottom: 100,
-    alignItems: 'center',
-    backgroundColor: '#fff',
+    flex: 1,
+    backgroundColor: '#f0f0f0',
+    padding: 16,
   },
 });
